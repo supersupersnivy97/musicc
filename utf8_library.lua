@@ -11,7 +11,7 @@ local utf8 = {}
 -- Pattern that can be used with the string library to match a single UTF-8 byte-sequence.
 -- This expects the string to contain valid UTF-8 data.
 --
-charpattern = "[%z\x01-\x7F\xC2-\xF4][\x80-\xBF]*"
+utf8.charpattern = "[%z\x01-\x7F\xC2-\xF4][\x80-\xBF]*"
 
 --
 -- Transforms indexes of a string to be positive.
